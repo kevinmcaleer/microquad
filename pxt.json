@@ -4,7 +4,8 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "Servo": "github:waveshare/pxt-servo#v1.0.0"
     },
     "files": [
         "main.blocks",
@@ -18,5 +19,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "pyprj"
+    "preferredEditor": "blocksprj"
 }
