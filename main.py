@@ -1,6 +1,9 @@
+def walk_forward():
+    # Walk robot forward
+    Servo.servo(LEFT_FRONT_FOOT, 90)
 def test_1():
-    global FOOT_LOW, FOOT_HIGH
-    foot = LEFT_BACK_FOOT
+    global foot, FOOT_LOW, FOOT_HIGH
+    foot = RIGHT_FRONT_LEG
     FOOT_LOW = 20
     FOOT_HIGH = 150
     Servo.servo(foot, FOOT_HIGH)
@@ -22,9 +25,10 @@ def default_position():
     Servo.servo(RIGHT_BACK_FOOT, 90)
     Servo.servo(RIGHT_BACK_LEG, 90)
     basic.show_icon(IconNames.SMALL_DIAMOND)
-LEFT_FRONT_FOOT = 0
 FOOT_HIGH = 0
 FOOT_LOW = 0
+foot = 0
+LEFT_FRONT_FOOT = 0
 RIGHT_BACK_LEG = 0
 RIGHT_BACK_FOOT = 0
 RIGHT_FRONT_LEG = 0
@@ -36,10 +40,10 @@ LEFT_BACK_FOOT = 0
 LEFT_FRONT_LEG = 1
 LEFT_BACK_FOOT = 3
 LEFT_BACK_LEG = 2
-RIGHT_FRONT_FOOT = 4
-RIGHT_FRONT_LEG = 5
-RIGHT_BACK_FOOT = 6
-RIGHT_BACK_LEG = 7
+RIGHT_FRONT_FOOT = 7
+RIGHT_FRONT_LEG = 6
+RIGHT_BACK_FOOT = 5
+RIGHT_BACK_LEG = 4
 soundExpression.hello.play()
 
 def on_forever():
